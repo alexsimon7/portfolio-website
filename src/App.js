@@ -1,10 +1,10 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import About from './components/About/About';
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import Skills from './components/Skills';
 import Links from './components/Links';
-import Contact from './components/Contact';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
