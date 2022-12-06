@@ -8,7 +8,7 @@ import myPicture from './79182621.jpeg';
 import Stack from "react-bootstrap/Stack";
 
 function About() {
-  return(
+  return (
     <Container id="about">
       <Row>
         <Col>
