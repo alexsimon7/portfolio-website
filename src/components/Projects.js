@@ -4,12 +4,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import experience from "../data";
 import Stack from "react-bootstrap/Stack";
+import '../index.css';
 
 function Projects() {
   return(
     <Container id="projects">
       <Row>
-        <Col style={{fontSize: 100}}>
+        <Col className="section-header">
           My Projects
         </Col>
       </Row>

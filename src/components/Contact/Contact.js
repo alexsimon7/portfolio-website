@@ -6,12 +6,14 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import LocationMap from "./LocationMap";
+import '../../index.css';
+
 function Contact() {
   return(
     <Container id="contact">
       <Form>
         <Row>
-          <Col style={{fontSize: 100}}>
+          <Col className="section-header">
             Contact Me
           </Col>
         </Row>

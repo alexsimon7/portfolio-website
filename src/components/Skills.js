@@ -5,24 +5,21 @@ import Col from "react-bootstrap/Col";
 import Stack from "react-bootstrap/Stack";
 import Card from "react-bootstrap/Card";
 import experience from "../data";
+import '../index.css';
 
 function Skills() {
    return(
      <Container id="skills">
        <Row>
-         <Col style={{fontSize: 100}}>
+         <Col className="section-header">
            My Skills
          </Col>
        </Row>
        <Row>
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
+         <div className="section-sub-header">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
+           incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
+         </div>
        </Row>
        <Row>
          <Col>

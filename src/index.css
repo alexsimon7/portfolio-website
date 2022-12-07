@@ -1,1 +1,36 @@
+* {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+div.about-cont {
+    padding-top: 70px;
+}
+
+
+h1.hello {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+div.section-header {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+}
+
+div.section-sub-header {
+    font-size: 25px;
+}
+
+div.my-image {
+    text-align: center;
+}
+
+div.intro-video {
+}
+
 
