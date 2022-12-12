@@ -1,36 +1,174 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
-    font-family: "Gill Sans", sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+
 }
 
-
-
-div.about-cont {
-    padding-top: 70px;
+.nav-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: darkgrey;
+    box-shadow: 0px 3px 5px gray;
 }
 
-
-h1.hello {
-    font-size: 100px;
-    font-weight: bold;
-}
-
-div.section-header {
-    font-size: 100px;
-    font-weight: bold;
-    text-align: left;
-}
-
-div.section-sub-header {
+.nav-bar-title-link {
+    text-decoration: none;
+    color: black;
     font-size: 25px;
+    font-weight: bold;
+}
+.nav-bar-title-link:hover {
+    color: black;
 }
 
-div.my-image {
+.nav-bar-buttons {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-bar-link:hover {
+    color: rgb(48,48,48);
+}
+
+.about-me {
+    padding: 0px 20px;
+    display: block;
+}
+
+.greet-and-picture {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.hello {
+    font-size: 150px;
+}
+
+.my-picture{
+
+}
+
+.my-picture img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-and-video {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.intro-video {
     text-align: center;
 }
 
-div.intro-video {
+.projects {
+    padding: 0px 20px;
+    display: block;
 }
+
+.projects-title {
+    font-size: 100px;
+    padding-top: 40px;
+}
+.project-title {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.project-desc {
+    padding-top: 10px;
+    font-size: 15px;
+}
+.project-details {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.project-list video {
+    padding-top: 10px;
+}
+
+.project-details a {
+    text-decoration: none;
+    color: white;
+    background-color: #3fb950;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.project-details a:hover {
+    background-color: rgb(48,48,48);
+}
+
+.skills {
+    padding: 0 20px;
+    display: block;
+}
+
+.skills-title {
+    font-size: 100px;
+    padding-top: 40px;
+}
+
+.skills-description {
+    font-size: 20px;
+}
+
+.list-of-skills {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.list-of-skills ul {
+    list-style: none;
+}
+
+.contact {
+    padding: 0 20px;
+    display: block;
+}
+
+.contact-title {
+    font-size: 100px;
+    padding-top: 40px;
+}
+
+.contact-body {
+    display: flex;
+}
+
+.contact-elements {
+    list-style: none;
+}
+
+
+
 
 

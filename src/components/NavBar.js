@@ -1,24 +1,25 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from "react-bootstrap/Nav";
-import '../index.css';
 function NavBar() {
   return(
-    <Container>
-      <Navbar bg="dark" variant="dark" fixed="top">
-        <Container>
-          <Navbar.Brand href="#home">Alex Simon</Navbar.Brand>
-          <Nav>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#links">Links</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </Container>
+    <nav className="nav-bar">
+      <p className="nav-bar-title">
+          <a href="#top" className="nav-bar-title-link">Alex Simon</a>
+      </p>
+      <ul className="nav-bar-buttons">
+        <li>
+          <a href="#about-me" className="nav-bar-link">About</a>
+        </li>
+        <li>
+          <a href="#projects" className="nav-bar-link">Projects</a>
+        </li>
+        <li>
+          <a href="#skills" className="nav-bar-link">Skills</a>
+        </li>
+        <li>
+          <a href="#contact" className="nav-bar-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
