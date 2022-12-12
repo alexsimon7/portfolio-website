@@ -1,42 +1,32 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import experience from "../data";
-import Stack from "react-bootstrap/Stack";
 
 function Projects() {
+  const projects = experience.projects;
+  const projectsList = projects.map((project) => (
+    <div className="project-list">
+      <h3 className="project-title">{project.title} | {project.reason}</h3>
+      <p className="project-desc">{project.description}</p>
+      <div className={`${project.title}-video`}>
+        <video
+          src=""
+          poster=""
+          width="854"
+          height="480"
+          preload="auto"
+          controls>
+          <p>{`${project.title} Video`}</p>
+        </video>
+      </div>
+      <p className="project-details">{project.tech} |  <a href={project.link} className={`${project.title}-github`}>Github</a></p>
+    </div>
+  ));
+
   return(
-    <Container id="projects">
-      <Row>
-        <Col style={{fontSize: 100}}>
-          My Projects
-        </Col>
-      </Row>
-      {experience.projects.map((project) => (
-        <Container>
-          <Row style={{fontSize: 50}}>
-            <Stack direction="horizontal" gap={3}>
-              <div>{project.title}</div>
-              <div className="vr"/>
-              <div>{project.reason}</div>
-            </Stack>
-          </Row>
-          <Row>
-            <Stack direction="horizontal" gap={3}>
-              <div>{project.description}</div>
-              <div>{project.video}</div>
-            </Stack>
-          </Row>
-          <Row>
-            <Stack direction="horizontal" gap={3}>
-              <div>{project.tech}</div>
-              <div><a href={project.link}>GitHub Repo</a></div>
-            </Stack>
-          </Row>
-        </Container>
-      ))}
-    </Container>
+    <div className="projects" id="projects">
+      <h1 className="projects-title">My Projects</h1>
+      <p>{projectsList}</p>
+    </div>
   );
 }
 
