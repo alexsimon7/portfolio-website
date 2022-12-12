@@ -1,54 +1,27 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Stack from "react-bootstrap/Stack";
-import Card from "react-bootstrap/Card";
 import experience from "../data";
 
 function Skills() {
-   return(
-     <Container id="skills">
-       <Row>
-         <Col style={{fontSize: 100}}>
-           My Skills
-         </Col>
-       </Row>
-       <Row>
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
+   const skills = experience.skills;
+   const listOfSkills = skills.map((skill) => (
+     <ul>
+       <li>{skill}</li>
+     </ul>
+   ));
+
+  return(
+     <div className="skills" id="skills">
+       <h3 className="skills-title">My Skills</h3>
+       <p className="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
          incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
          incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
          incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-       </Row>
-       <Row>
-         <Col>
-           <Stack gap={3}>
-             {experience.skills.filter((skill, index) => (index % 2 === 0)).map((skill, index) => (
-                <div>
-                  <Card bg="dark" text="white">
-                    {`${skill}`}
-                  </Card>
-                </div>
-             ))}
-           </Stack>
-         </Col>
-         <Col>
-           <Stack gap={3}>
-             {experience.skills.filter((skill, index) => (index % 2 !== 0)).map((skill, index) => (
-               <div>
-                 <Card bg="dark" text="white">
-                   {`${skill}`}
-                 </Card>
-               </div>
-             ))}
-           </Stack>
-         </Col>
-       </Row>
-     </Container>
+         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?</p>
+       <div className="list-of-skills">{listOfSkills}</div>
+     </div>
    )
 }
 
