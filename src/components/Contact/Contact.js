@@ -6,43 +6,43 @@ function Contact() {
       <h3 className="contact-title">Contact Me</h3>
       <div className="contact-body">
         <form action="" method="">
-          <ul className="contact-elements">
-            <li>
-              <label>Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                required
-              />
-            </li>
-            <li>
-              <label>Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                required
-              />
-            </li>
-            <li>
-              <label>Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Enter Your Message"
-                required
-              ></textarea>
-            </li>
-            <li>
-              <input
-                type="submit"
-                value="Submit"
-              />
-            </li>
-          </ul>
+          <div className="form-element">
+            <label className="input-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div className="form-element">
+            <label className="input-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div className="form-element">
+            <label className="input-label">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="50"
+              rows="15"
+              placeholder="Enter Your Message"
+              required
+            ></textarea>
+          </div>
+          <div className="form-submit">
+            <input
+              type="submit"
+              value="Submit"
+            />
+          </div>
         </form>
         <LocationMap className="location-map" />
       </div>

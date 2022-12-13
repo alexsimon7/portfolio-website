@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Links from './components/Links';
 import Contact from './components/Contact/Contact';
+import Footer from "./components/Footer/Footer";
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Skills />
       <Links />
       <Contact />
+      <Footer />
     </main>
   );
 }

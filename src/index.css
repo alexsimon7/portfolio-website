@@ -21,6 +21,7 @@ html {
     padding: 5px 10px;
     background-color: darkgrey;
     box-shadow: 0px 3px 5px gray;
+    width: 960px;
 }
 
 .nav-bar-title-link {
@@ -50,6 +51,7 @@ html {
 }
 
 .about-me {
+    width: 960px;
     padding: 0px 20px;
     display: block;
 }
@@ -85,6 +87,7 @@ html {
 }
 
 .projects {
+    width: 960px;
     padding: 0px 20px;
     display: block;
 }
@@ -124,6 +127,7 @@ html {
 }
 
 .skills {
+    width: 960px;
     padding: 0 20px;
     display: block;
 }
@@ -151,7 +155,8 @@ html {
 }
 
 .contact {
-    padding: 0 20px;
+    width: 960px;
+    padding: 0 20px 20px;
     display: block;
 }
 
@@ -162,11 +167,65 @@ html {
 
 .contact-body {
     display: flex;
+    gap: 50px;
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 2%;
 }
 
-.contact-elements {
+.form-element {
+    padding-bottom: 10px;
+}
+
+.input-label {
+    float: left;
+    width: 100px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.form-submit {
+    text-align: right;
+}
+
+footer {
+    display: block;
+    padding: 5px 10px;
+    width: 960px;
+    background-color: darkgrey;
+    box-shadow: 0px 3px 5px gray;
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
     list-style: none;
 }
+
+footer li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer li a img {
+    width: 25px;
+}
+
+footer li a:hover {
+    color: rgb(48,48,48);
+}
+
+
+
+
+
 
 
 
