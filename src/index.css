@@ -154,6 +154,31 @@ html {
     list-style: none;
 }
 
+.education {
+    width: 960px;
+    padding: 0 20px;
+    display: block;
+}
+
+.education-title {
+    font-size: 100px;
+    padding-top: 40px;
+}
+
+.each-education-title {
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.each-education-experiences {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.each-education-experiences-list {
+    list-style: none;
+}
+
 .contact {
     width: 960px;
     padding: 0 20px 20px;

@@ -46,15 +46,50 @@ const skills = [
   "JavaScript",
   "Node.js",
   "React",
-  "HTML5",
-  "CSS3",
+  "HTML",
+  "CSS",
   "Git",
   "Linux"
 ];
 
+const education = [
+  {
+    degree: "Tandon Bridge",
+    institution: "New York University, Tandon School of Engineering",
+    year: "Current",
+    other: [
+      "Description: A single course encompassing the knowledge-base of over 400 hours of learning, " +
+      "equivalent to more than 3 courses containing topics in Computer Programming in C++, Object " +
+      "Oriented Design, Discrete Math, Data Structures and Algorithms, Principles of Operating " +
+      "Systems, and Introduction to Computer Networks"
+    ]
+  },
+  {
+    degree: "J.D.",
+    institution: "Loyola Law School, Los Angeles",
+    year: "2015",
+    other: [
+      "Published Note: With Great Power Comes Great Responsibility: Gary Friedrich's Battle With " +
+      "Marvel For Artist Rights, 35 Loy. L.A. Ent. L. Rev. 211 (2015)",
+      "Of Note: Participated in Copyright Moot Court"
+    ]
+  },
+  {
+    degree: "B.A. - History",
+    institution: "University of California, Berkeley",
+    year: "2009",
+    other: [
+      'Senior Thesis: "The Vietnam War In Film"',
+      "Activities: Cal Men's Rowing",
+      'Of Note: Taught a student-led DeCal class on "American Wars in feature films'
+    ]
+  }
+]
+
 const experience = {
   projects,
   skills,
+  education,
 }
 
 export default experience;

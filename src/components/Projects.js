@@ -5,7 +5,7 @@ function Projects() {
   const projects = experience.projects;
   const projectsList = projects.map((project) => (
     <div className="project-list">
-      <h3 className="project-title">{project.title} | {project.reason}</h3>
+      <h4 className="project-title">{project.title} | {project.reason}</h4>
       <p className="project-desc">{project.description}</p>
       <div className={`${project.title}-video`}>
         <video
