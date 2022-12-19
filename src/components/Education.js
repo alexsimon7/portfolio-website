@@ -1,5 +1,5 @@
 import React from "react";
-import experience from "../data";
+import experience from "../data/data";
 function Education() {
   const education = experience.education;
   const educationList = education.map((school) => (

@@ -1,4 +1,9 @@
 main {
+    background-color: whitesmoke;
+}
+
+.main-container {
     max-width: 960px;
     margin: auto;
+    background-color: darkgrey;
 }

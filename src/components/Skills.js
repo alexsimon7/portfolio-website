@@ -1,11 +1,13 @@
 import React from "react";
-import experience from "../data";
+import experience from "../data/data";
 
 function Skills() {
    const skills = experience.skills;
    const listOfSkills = skills.map((skill) => (
      <ul>
-       <li>{skill}</li>
+       <li>
+         <img className="skills-logos" src={require(`../data/skills-logos/${skill}`)} alt="skills-images"/>
+       </li>
      </ul>
    ));
 
