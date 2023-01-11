@@ -9,8 +9,25 @@ html {
     font-family: "Gill Sans", sans-serif;
 }
 
+.section-title {
+    font-size: 6rem;
+    padding-top: 40px;
+}
+
+.section-subheading {
+    font-size: 1.75rem;
+    padding-top: 20px;
+}
+
+.section-para {
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
 .nav-bar {
     position: sticky;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     left: 0;
     z-index: 1;
@@ -20,7 +37,8 @@ html {
     padding: 5px 10px;
     background-color: darkolivegreen;
     box-shadow: 0px 3px 5px gray;
-    width: 960px;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .nav-bar-title-link {
@@ -50,7 +68,10 @@ html {
 }
 
 .about-me {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 20px;
     display: block;
 }
@@ -62,7 +83,7 @@ html {
 }
 
 .hello {
-    font-size: 150px;
+    font-size: 9rem;
 }
 
 .my-picture{
@@ -85,28 +106,23 @@ html {
     text-align: center;
 }
 
+.intro-video video {
+    width: 640px;
+    height: 480px;
+}
+
 .projects {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 20px;
     display: block;
 }
 
-.projects-title {
-    font-size: 100px;
-    padding-top: 40px;
-}
-.project-title {
-    padding-top: 10px;
-    font-size: 30px;
-}
-
-.project-desc {
-    padding-top: 10px;
-    font-size: 15px;
-}
 .project-details {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .project-list video {
@@ -125,7 +141,7 @@ html {
     background-color: rgb(48,48,48);
 }
 
-.project-image {
+.project-none {
     width: 854px;
     height: 480px;
 }
@@ -137,15 +153,14 @@ html {
 
 
 .skills {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 20px;
     display: block;
 }
 
-.skills-title {
-    font-size: 100px;
-    padding-top: 40px;
-}
 
 .skills-description {
     font-size: 20px;
@@ -173,24 +188,12 @@ html {
 }
 
 .education {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 20px;
     display: block;
-}
-
-.education-title {
-    font-size: 100px;
-    padding-top: 40px;
-}
-
-.each-education-title {
-    padding-top: 10px;
-    font-size: 25px;
-}
-
-.each-education-experiences {
-    padding-top: 10px;
-    font-size: 15px;
 }
 
 .each-education-experiences-list {
@@ -198,15 +201,14 @@ html {
 }
 
 .contact {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 20px 20px;
     display: block;
 }
 
-.contact-title {
-    font-size: 100px;
-    padding-top: 40px;
-}
 
 .contact-body {
     display: flex;
@@ -218,6 +220,11 @@ html {
 
 .form-element {
     padding-bottom: 10px;
+}
+
+.form-element textarea {
+    height: 13rem;
+    width: 24rem;
 }
 
 .input-label {
@@ -234,7 +241,10 @@ html {
 footer {
     display: block;
     padding: 5px 10px;
-    width: 960px;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: darkolivegreen;
     box-shadow: 0px 3px 5px gray;
     font-weight: bold;
@@ -263,6 +273,84 @@ footer li a img {
 
 footer li a:hover {
     color: rgb(48,48,48);
+}
+
+@media (max-width: 899px){
+    .intro-video video {
+        width: 100%;
+        max-width: 640px;
+        height: 100%;
+        max-height: 480px;
+    }
+
+    .project-list video {
+        width: 100%;
+        max-width: 640px;
+        height: 100%;
+        max-height: 480px;
+
+    }
+
+    .project-none {
+        width: 100%;
+        max-width: 854px;
+        height: 100%;
+        max-height: 480px;
+    }
+
+    .skills-logos {
+        width: 100%;
+        max-height: 150px;
+    }
+
+    .contact-body form {
+        flex: 1 1 0;
+    }
+
+    .input-label {
+        text-align: left;
+    }
+
+
+    .location-map-frame {
+        width: 100%;
+        flex: 1 1 0;
+    }
+
+    .form-element textarea {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 710px) {
+    .hello {
+        font-size: 6rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-subheading {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .greet-and-picture {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .skills-logos {
+        width: 100%;
+        max-height: 100px;
+    }
+
 }
 
 

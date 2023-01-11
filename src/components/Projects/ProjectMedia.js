@@ -9,7 +9,7 @@ function ProjectMedia({project}) {
       <video
         src={require(`../../data/${project.media.video.videoFile}`)}
         poster={require(`../../data/${project.media.video.videoPoster}`)}
-        width="854"
+        width="640"
         height="480"
         preload="auto"
         controls>

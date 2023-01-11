@@ -4,10 +4,10 @@ function Education() {
   const education = experience.education;
   const educationList = education.map((school) => (
     <div className='education-list'>
-      <h4 className="each-education-title">
+      <h4 className="section-subheading">
         {`${school.degree} - ${school.institution}, ${school.year === "Current" ? school.year: `Graduated ${school.year}`}`}
       </h4>
-      <p className="each-education-experiences">
+      <p className="section-para">
         {school.other.map((other) => (
           <ul className="each-education-experiences-list">
             <li>
@@ -22,7 +22,7 @@ function Education() {
 
   return (
     <div className="education" id="education">
-      <h3 className="education-title">
+      <h3 className="section-title">
         My Education
       </h3>
       <p>{educationList}</p>

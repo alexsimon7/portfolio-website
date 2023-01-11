@@ -3,7 +3,7 @@ import LocationMap from "./LocationMap";
 function Contact() {
   return(
     <div className="contact" id="contact">
-      <h3 className="contact-title">Contact Me</h3>
+      <h3 className="section-title">Contact Me</h3>
       <div className="contact-body">
         <form action="" method="">
           <div className="form-element">
@@ -31,8 +31,6 @@ function Contact() {
             <textarea
               id="message"
               name="message"
-              cols="50"
-              rows="15"
               placeholder="Enter Your Message"
               required
             ></textarea>

@@ -13,15 +13,7 @@ function Skills() {
 
   return(
      <div className="skills" id="skills">
-       <h3 className="skills-title">My Skills</h3>
-       <p className="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laborum quasi,
-         incidunt dolore iste nostrum cupiditate voluptas? Laborum, voluptas natus?</p>
+       <h3 className="section-title">My Skills</h3>
        <div className="list-of-skills">{listOfSkills}</div>
      </div>
    )

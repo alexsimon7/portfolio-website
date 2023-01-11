@@ -7,8 +7,8 @@ function Projects() {
   const projects = experience.projects;
   const projectsList = projects.map((project) => (
     <div className="project-list">
-      <h4 className="project-title">{project.title} | {project.reason}</h4>
-      <p className="project-desc">{project.description}</p>
+      <h4 className="section-subheading">{project.title} | {project.reason}</h4>
+      <p className="section-para">{project.description}</p>
       <div className={`${project.title}-video`}>
         <ProjectMedia
           project={project}
@@ -28,7 +28,7 @@ function Projects() {
 
   return(
     <div className="projects" id="projects">
-      <h3 className="projects-title">My Projects</h3>
+      <h3 className="section-title">My Projects</h3>
       <p>{projectsList}</p>
     </div>
   );

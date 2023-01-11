@@ -68,17 +68,6 @@ const skills = [
 
 const education = [
   {
-    degree: "Tandon Bridge",
-    institution: "New York University, Tandon School of Engineering",
-    year: "Current",
-    other: [
-      "Description: A single course encompassing the knowledge-base of over 400 hours of learning, " +
-      "equivalent to more than 3 courses containing topics in Computer Programming in C++, Object " +
-      "Oriented Design, Discrete Math, Data Structures and Algorithms, Principles of Operating " +
-      "Systems, and Introduction to Computer Networks"
-    ]
-  },
-  {
     degree: "J.D.",
     institution: "Loyola Law School, Los Angeles",
     year: "2015",
