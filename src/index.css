@@ -37,6 +37,7 @@ html {
     padding: 5px 10px;
     background-color: darkolivegreen;
     box-shadow: 0px 3px 5px gray;
+    height: 42px;
     width: 100%;
     max-width: 1400px;
 }
@@ -66,6 +67,39 @@ html {
 .nav-bar-link:hover {
     color: rgb(48,48,48);
 }
+
+.nav-hamburger {
+    display: none;
+}
+
+.nav-bar-buttons-vert {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    display: none;
+    background-color: darkolivegreen;
+    box-shadow: 0px 3px 5px gray;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 42px;
+}
+
+.nav-bar-link-vert {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-bar-buttons-vert li {
+    padding: 10px;
+}
+
+.nav-bar-buttons-vert a:hover {
+    color: rgb(48,48,48);
+}
+
+
 
 .about-me {
     width: 100%;
@@ -340,6 +374,20 @@ footer li a:hover {
 }
 
 @media (max-width: 600px) {
+
+    .nav-bar-link {
+        display: none;
+    }
+
+    .nav-bar-buttons {
+        gap: 0;
+    }
+
+    .nav-hamburger {
+        display: block;
+    }
+
+
     .greet-and-picture {
         flex-wrap: wrap;
         text-align: center;
