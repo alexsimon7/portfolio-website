@@ -157,6 +157,7 @@ html {
 .project-details {
     padding-top: 10px;
     font-size: 1.5rem;
+    white-space: nowrap;
 }
 
 .project-list video {
@@ -398,8 +399,35 @@ footer li a:hover {
         width: 100%;
         max-height: 100px;
     }
-
 }
+
+@media (max-width: 449px) {
+    .hello {
+        font-size: 4rem;
+    }
+
+    .my-picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subheading {
+        font-size: 1rem;
+    }
+
+    .section-para {
+        font-size: 1rem;
+    }
+
+    .project-details {
+        font-size: 1rem;
+    }
+}
+
 
 
 

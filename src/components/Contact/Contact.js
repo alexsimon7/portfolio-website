@@ -1,11 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import LocationMap from "./LocationMap";
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+
+    fetch("/", {
+      method: "POST",
+      headers: {"Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({"form-name": "contact-form", name, email, message})
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
+
+
+
   return(
     <div className="contact" id="contact">
       <h3 className="section-title">Contact Me</h3>
       <div className="contact-body">
-        <form action="" method="">
+        <form onSubmit={onSubmitHandler} data-netlify="true" name="contact-form">
           <div className="form-element">
             <label className="input-label">Name:</label>
             <input
@@ -14,6 +38,7 @@ function Contact() {
               name="sender-name"
               placeholder="Enter Your Name"
               required
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="form-element">
@@ -24,6 +49,7 @@ function Contact() {
               name="sender-email"
               placeholder="Enter Your Email"
               required
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-element">
@@ -33,6 +59,7 @@ function Contact() {
               name="message"
               placeholder="Enter Your Message"
               required
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
           <div className="form-submit">

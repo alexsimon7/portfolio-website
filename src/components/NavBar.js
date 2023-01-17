@@ -7,14 +7,14 @@ function NavBar() {
     setHamburgerOpen(!navHamburgerOpen);
   }
 
-  const handleResize = () => {
+  const closeHamburgerMenu = () => {
     if(navHamburgerOpen) {
       toggleHamburger();
     }
   }
 
-  window.addEventListener('resize', handleResize);
-  window.addEventListener('navigate', handleResize);
+  window.addEventListener('resize', closeHamburgerMenu);
+  window.addEventListener('scroll', closeHamburgerMenu);
 
   return(
     <nav className="nav-bar">
