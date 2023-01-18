@@ -1,10 +1,6 @@
-main {
-    background-color: whitesmoke;
-}
-
 .main-container {
-    width: 100%;
-    height: auto;
-    min-width: 320px;
-    background-color: darkgrey;
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  background-color: darkgrey;
 }

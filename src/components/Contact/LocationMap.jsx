@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 function LocationMap() {
-  return(
+  return (
     <div>
       <iframe
         className="location-map-frame"
@@ -9,7 +9,7 @@ function LocationMap() {
         title="my location"
         width="300"
         height="300"
-      ></iframe>
+      />
     </div>
   );
 }

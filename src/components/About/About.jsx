@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 import myPicture from './79182621.jpeg';
 
 function About() {
   return (
-    <div className="about-me" >
+    <div className="about-me">
       <div className="greet-and-picture">
-        <h1 className="hello">Hi, I'm Alex.</h1>
-        <p className='my-picture'>
-          <img src={myPicture} alt="portrait"/>
+        <h1 className="hello">
+          Hi, I&#39;m Alex
+        </h1>
+        <p className="my-picture">
+          <img src={myPicture} alt="portrait" />
         </p>
       </div>
       <div className="about-and-video" id="about-me">
@@ -20,7 +22,8 @@ function About() {
           width="640"
           height="480"
           preload="auto"
-          controls>
+          controls
+        >
           <p>Introduction of Myself</p>
         </video>
       </div>

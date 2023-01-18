@@ -1,0 +1,15 @@
+import React from 'react';
+
+function NavHamburger() {
+  return (
+    <div className="nav-hamburger">
+      <svg width="30" height="30">
+        <rect y="5" rx="3" width="30" height="5" />
+        <rect y="15" rx="3" width="30" height="5" />
+        <rect y="25" rx="3" width="30" height="5" />
+      </svg>
+    </div>
+  );
+}
+
+export default NavHamburger;

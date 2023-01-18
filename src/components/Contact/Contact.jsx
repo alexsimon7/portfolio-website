@@ -1,31 +1,29 @@
-import React, {useState} from "react";
-import LocationMap from "./LocationMap";
+import React, { useState } from 'react';
+import LocationMap from './LocationMap';
+
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
-
+  const encode = (data) => Object.keys(data).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
-    fetch("/", {
-      method: "POST",
-      headers: {"Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({"form-name": "contact-form", name, email, message})
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': 'contact-form',
+        name,
+        email,
+        message,
+      }),
     })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
-
-
-
-  return(
+      .then(() => window.alert('Message sent!'))
+      .catch((error) => window.alert(error));
+  };
+  return (
     <div className="contact" id="contact">
       <h3 className="section-title">Contact Me</h3>
       <div className="contact-body">
@@ -60,7 +58,7 @@ function Contact() {
               placeholder="Enter Your Message"
               required
               onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
+            />
           </div>
           <div className="form-submit">
             <input
@@ -73,7 +71,6 @@ function Contact() {
       </div>
     </div>
   );
-
 }
 
 export default Contact;

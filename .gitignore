@@ -28,3 +28,5 @@ yarn-error.log*
 /src/components/About/79182621.jpeg
 /src/data/punch-an-ork/
 /src/data/evtracker/
+/.stylelintrc.json
+/.eslintrc.json
