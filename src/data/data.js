@@ -10,6 +10,7 @@ const projects = [
       + ' custom items with weights. Will feature an interactive interface where users can view gear taken on previous trips and tinker'
       + ' with gear for an upcoming trip.',
     media: {
+      name: 'none',
       type: 'none',
     },
     link: 'https://github.com/alexsimon7/backpacker-trip-companion',
@@ -27,10 +28,11 @@ const projects = [
       + ' Implemented a console-based interface to collect car data (battery and climate control usage) for user selected trips, save the'
       + ' trips locally via JSON, and view and ﬁlter the trips by certain parameters for analysis.',
     media: {
+      name: 'evtracker',
       type: 'video',
       video: {
         videoFile: 'evtracker/evtracker.mp4',
-        videoPoster: 'evtracker/evtracker-poster.png',
+        videoPoster: 'evtracker/evtracker_poster.png',
       },
     },
     link: 'https://github.com/alexsimon7/ev-tracker',
@@ -45,25 +47,16 @@ const projects = [
       + ' run) based on their current dicehand and health as well as automated computer actions based on the same. Partially'
       + ' converted the console-based app to a React leveraging state and hooks to track player, computer, and round information.',
     media: {
+      name: 'punch_an_ork',
       type: 'video',
       video: {
-        videoFile: 'punch-an-ork/punch-an-ork.mp4',
-        videoPoster: 'punch-an-ork/punch-an-ork-poster.png',
+        videoFile: 'punch_an_ork/punch_an_ork.mp4',
+        videoPoster: 'punch_an_ork/punch_an_ork_poster.png',
       },
     },
     link: 'https://github.com/alexsimon7/punch-an-ork',
     current: false,
   },
-];
-
-const skills = [
-  'javascript.png',
-  'node.png',
-  'react.png',
-  'html5.png',
-  'css3.png',
-  'git.png',
-  'linux.png',
 ];
 
 const education = [
@@ -91,7 +84,6 @@ const education = [
 
 const experience = {
   projects,
-  skills,
   education,
 };
 

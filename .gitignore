@@ -26,7 +26,7 @@ yarn-error.log*
 /public/79182621.jpeg
 /public/cristofer-maximilian-5_nJw3UUgpQ-unsplash.jpg
 /src/components/About/79182621.jpeg
-/src/data/punch-an-ork/
 /src/data/evtracker/
 /.stylelintrc.json
 /.eslintrc.json
+/src/data/punch_an_ork/

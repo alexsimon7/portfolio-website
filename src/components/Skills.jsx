@@ -1,12 +1,20 @@
 import React from 'react';
-import experience from '../data/data';
+
+import javascript from '../data/skills-logos/javascript.png';
+import node from '../data/skills-logos/node.png';
+import react from '../data/skills-logos/react.png';
+import html5 from '../data/skills-logos/html5.png';
+import css3 from '../data/skills-logos/css3.png';
+import git from '../data/skills-logos/git.png';
+import linux from '../data/skills-logos/linux.png';
 
 function Skills() {
-  const { skills } = experience;
+  // const { skills } = experience;
+  const skills = [javascript, node, react, html5, css3, git, linux];
   const listOfSkills = skills.map((skill) => (
     <ul>
       <li>
-        <img className="skills-logos" src={require(`../data/skills-logos/${skill}`)} alt="skills-images" />
+        <img className="skills-logos" src={skill} alt="skills-images" />
       </li>
     </ul>
   ));

@@ -6,7 +6,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const encode = (data) => Object.keys(data).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
+  const encode = (data) => Object.keys(data).map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`).join('&');
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
@@ -34,7 +34,7 @@ function Contact() {
               type="text"
               id="name"
               name="sender-name"
-              placeholder="Enter Your Name"
+              placeholder="Enter Your Nagme"
               required
               onChange={(e) => setName(e.target.value)}
             />
