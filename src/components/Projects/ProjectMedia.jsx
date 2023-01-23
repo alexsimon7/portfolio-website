@@ -25,9 +25,7 @@ function ProjectMedia({ project }) {
       <video
         src={mediaLibrary[projectName].video}
         poster={mediaLibrary[projectName].poster}
-        width="640"
-        height="480"
-        preload="auto"
+        preload="metadata"
         controls
       >
         <p>{`${project.title} Video`}</p>

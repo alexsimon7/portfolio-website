@@ -1,5 +1,6 @@
 import React from 'react';
 import myPicture from './79182621.jpeg';
+import introMovie from '../../data/intro_movie/intro_movie.mp4';
 
 function About() {
   return (
@@ -17,11 +18,8 @@ function About() {
       </div>
       <div className="intro-video">
         <video
-          src=""
-          poster=""
-          width="640"
-          height="480"
-          preload="auto"
+          src={introMovie}
+          preload="metadata"
           controls
         >
           <p>Introduction of Myself</p>
