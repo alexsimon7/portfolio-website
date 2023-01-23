@@ -27,14 +27,14 @@ function Contact() {
     <div className="contact" id="contact">
       <h3 className="section-title">Contact Me</h3>
       <div className="contact-body">
-        <form onSubmit={onSubmitHandler} data-netlify="true" name="contact-form">
+        <form netlify onSubmit={onSubmitHandler} name="contact-form">
           <div className="form-element">
             <label className="input-label">Name:</label>
             <input
               type="text"
               id="name"
               name="sender-name"
-              placeholder="Enter Your Nagme"
+              placeholder="Enter Your Name"
               required
               onChange={(e) => setName(e.target.value)}
             />
