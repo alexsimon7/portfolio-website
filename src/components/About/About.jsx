@@ -21,6 +21,7 @@ function About() {
           src={introMovie}
           preload="metadata"
           controls
+          playsInline
         >
           <p>Introduction of Myself</p>
         </video>

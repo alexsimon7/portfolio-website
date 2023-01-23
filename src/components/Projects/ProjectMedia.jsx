@@ -27,6 +27,7 @@ function ProjectMedia({ project }) {
         poster={mediaLibrary[projectName].poster}
         preload="metadata"
         controls
+        playsInline
       >
         <p>{`${project.title} Video`}</p>
       </video>
