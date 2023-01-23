@@ -1,6 +1,7 @@
 import React from 'react';
 import myPicture from './79182621.jpeg';
 import introMovie from '../../data/intro_movie/intro_movie.mp4';
+import introMoviePoster from '../../data/intro_movie/intro_movie_poster.png';
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
       <div className="intro-video">
         <video
           src={introMovie}
+          poster={introMoviePoster}
           preload="metadata"
           controls
           playsInline
