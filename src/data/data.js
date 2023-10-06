@@ -61,6 +61,16 @@ const projects = [
 
 const education = [
   {
+    degree: 'B.S. - Computer Science (Postbaccalaureate)',
+    institution: 'Oregon State University',
+    year: 'Current',
+    other: [
+      "Classes Taken: Introduction to Computer Science I & II, Discrete Structures in Computer Science, " +
+      "and Computer Architecture & Assembly Language",
+      'Current Classes: Web Development and Data Structures',
+    ],
+  },
+  {
     degree: 'J.D.',
     institution: 'Loyola Law School, Los Angeles',
     year: '2015',
