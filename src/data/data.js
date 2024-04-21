@@ -1,21 +1,21 @@
 const projects = [
-  {
-    title: "Backpacker's Companion App",
-    reason: 'Personal',
-    tech: 'JavaScript, Express, Node.js',
-    description: 'A React-based app to assist backpackers in planning and estimating the weight of camping gear prior to a'
-      + ' backpacking trip. Will utilize Node’s package puppeteer to create a script to collect weights of popular backpacking items'
-      + ' (backpacks, tents, sleeping bags and pad, etc.) which will be made available via a custom API.'
-      + ' Will include a database where each user can store lists of items taken on previous trips as well as functionality to create'
-      + ' custom items with weights. Will feature an interactive interface where users can view gear taken on previous trips and tinker'
-      + ' with gear for an upcoming trip.',
-    media: {
-      name: 'none',
-      type: 'none',
-    },
-    link: 'https://github.com/alexsimon7/backpacker-trip-companion',
-    current: true,
-  },
+  // {
+  //   title: "Backpacker's Companion App",
+  //   reason: 'Personal',
+  //   tech: 'JavaScript, Express, Node.js',
+  //   description: 'A React-based app to assist backpackers in planning and estimating the weight of camping gear prior to a'
+  //     + ' backpacking trip. Will utilize Node’s package puppeteer to create a script to collect weights of popular backpacking items'
+  //     + ' (backpacks, tents, sleeping bags and pad, etc.) which will be made available via a custom API.'
+  //     + ' Will include a database where each user can store lists of items taken on previous trips as well as functionality to create'
+  //     + ' custom items with weights. Will feature an interactive interface where users can view gear taken on previous trips and tinker'
+  //     + ' with gear for an upcoming trip.',
+  //   media: {
+  //     name: 'none',
+  //     type: 'none',
+  //   },
+  //   link: 'https://github.com/alexsimon7/backpacker-trip-companion',
+  //   current: true,
+  // },
   {
     title: 'Electric Vehicle Efficiency Tracker',
     reason: 'Personal',
@@ -66,8 +66,9 @@ const education = [
     year: 'Current',
     other: [
       "Classes Taken: Introduction to Computer Science I & II, Discrete Structures in Computer Science, " +
-      "and Computer Architecture & Assembly Language",
-      'Current Classes: Web Development and Data Structures',
+      "Computer Architecture & Assembly Language, Web Development, Data Structures, Analysis of Algorithms, " +
+      "Introduction to Databases, Software Engineering",
+      'Current Classes: Operating Systems and Introduction to Parallel Programming',
     ],
   },
   {
@@ -75,9 +76,9 @@ const education = [
     institution: 'Loyola Law School, Los Angeles',
     year: '2015',
     other: [
-      "Published Note: With Great Power Comes Great Responsibility: Gary Friedrich's Battle With "
-      + 'Marvel For Artist Rights, 35 Loy. L.A. Ent. L. Rev. 211 (2015)',
-      'Of Note: Participated in Copyright Moot Court',
+      "Managed team of 50+ editors as Chief Production Officer for Loyola of Los Angeles Entertainment Law " +
+      "Review; wrote and published With Great Power Comes Great Responsibility: Gary Friedrich's Battle With " +
+      "Marvel For Artist Rights, 35 Loy. L.A. Ent. L. Rev. 211 (2015)"
     ],
   },
   {
