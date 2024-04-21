@@ -76,7 +76,7 @@ const education = [
     institution: 'Loyola Law School, Los Angeles',
     year: '2015',
     other: [
-      "Managed team of 50+ editors as Chief Production Officer for Loyola of Los Angeles Entertainment Law " +
+      "Activities: Managed team of 50+ editors as Chief Production Officer for Loyola of Los Angeles Entertainment Law " +
       "Review; wrote and published With Great Power Comes Great Responsibility: Gary Friedrich's Battle With " +
       "Marvel For Artist Rights, 35 Loy. L.A. Ent. L. Rev. 211 (2015)"
     ],
